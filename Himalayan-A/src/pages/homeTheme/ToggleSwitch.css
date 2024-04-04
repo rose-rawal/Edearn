@@ -1,0 +1,65 @@
+/* ToggleSwitch.css */
+
+.switch-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f7fc;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.switch-container.dark {
+  background: #212121;
+}
+
+#switch {
+  margin: 0 auto;
+  margin-top: 15%;
+  position: relative;
+  display: block;
+  width: 70px; /* Adjust the width */
+  height: 43px; /* Adjust the height */
+  background-color: rgb(241, 161, 12);
+  border-radius: 30px; /* Adjust the border-radius */
+  cursor: pointer;
+}
+
+#circle {
+  width: 25px; /* Adjust the width of the circle */
+  height: 25px; /* Adjust the height of the circle */
+  background-image: none;
+  background-color: white;
+  position: relative;
+  top: 7px;
+  left: 7px;
+  border: 2px solid white;
+  border-radius: 50%; /* Make it a perfect circle */
+  transition: 0.4s ease left, 0.4s ease background-position;
+  z-index: 2;
+}
+
+#text,
+#text2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 10px; /* Adjust the font size */
+  font-weight: 300;
+  margin-left: 40px; /* Adjust the margin */
+  z-index: 1;
+}
+
+#text2 {
+  margin-left: 4px; /* Adjust the margin */
+  text-align: center;
+}
+
+#toggle:checked + #switch #circle {
+  left: 35px; /* Adjust the left position of the circle */
+}
+
+#toggle:checked + #switch {
+  background: #212121;
+}

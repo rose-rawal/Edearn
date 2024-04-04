@@ -1,0 +1,30 @@
+/* Style for the full-page container */
+.full-page {
+  position: relative;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden;
+}
+
+/* Style for the background */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f7fc; /* Set your desired background color or image */
+  z-index: -1; /* Place the background behind other content */
+}
+
+/* Style for the content container */
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place the content on top of the background */
+  text-align: center;
+  color: #000; /* Set your desired text color */
+}
+
+/* Add more styles as needed */
